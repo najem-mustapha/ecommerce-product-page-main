@@ -1,0 +1,84 @@
+:root{
+    --bg-clr-body:hsl(25, 100%, 94%);
+    --bg-clr-btn-add:hsl(26, 100%, 55%);
+    --bg-clr-btn-number:hsl(220, 14%, 75%);
+    --bg-clr-pourcent:hsl(223, 64%, 98%);
+    --txt-clr-navbar:hsl(0, 0%, 25%);
+    --txt-clr-heading:black;
+    --txt-clr-subtext:#aaa;
+    --padding-body:2rem 8rem;
+    --padding-div:1rem;
+    --padding-btn:0.5rem;
+    --ff-body:'Kumbh Sans', sans-serif;
+    --fw-heading:700;
+    --fw-subheading:400;
+    --border-radius:1rem;
+}
+body{
+background-color: var(--bg-clr-body);
+font-family: var(--ff-body);
+padding: var(--padding-body);
+text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+hr{
+    border-width: 0.1rem;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-color: #aaa;
+    margin: 2rem 0;
+}
+
+button .add-cart{
+    background-color: var(--bg-clr-btn-add);
+    color: white;
+    border-radius: var(--border-radius);
+    width: 66%;
+    height: auto;
+    padding: var(--padding-btn);
+}
+button .add-count{
+    background-color: var(--bg-clr-btn-number);
+    color:black;
+    border-radius: var(--border-radius);
+    width: 34%;
+    height: auto;
+    padding: var(--padding-btn);
+}
+/* navigation bar */
+.logos{
+    height: 25px;
+    align-self: center;
+}
+.navItem{
+    font-family: var(--ff-body);
+    color:var(--txt-clr-navbar);
+    font-size: 1.5rem;
+}
+.navBar, .navBar-item,.navItems{
+    display:flex;
+    justify-content: space-between;
+}
+.navItem{
+    cursor: pointer;
+    margin-left: 2rem;
+}
+.img-avatar{
+    width: 40px;
+    height: auto;
+    margin-left: 2rem;
+}
+/* image content */
+.content{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.content img{
+    border-radius: var(--border-radius);
+}
+.img-content{
+    padding: 5rem;
+}
