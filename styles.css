@@ -1,8 +1,8 @@
 :root{
-    --bg-clr-body:hsl(25, 100%, 94%);
+    --bg-clr-body:white;
     --bg-clr-btn-add:hsl(26, 100%, 55%);
     --bg-clr-btn-number:hsl(220, 14%, 75%);
-    --bg-clr-pourcent:hsl(223, 64%, 98%);
+    --bg-clr-pourcent:hsl(222, 64%, 98%);
     --txt-clr-navbar:hsl(0, 0%, 25%);
     --txt-clr-heading:black;
     --txt-clr-subtext:#aaa;
@@ -29,6 +29,15 @@ hr{
     border-right: none;
     border-bottom: none;
     border-color: #aaa;
+    margin: 2rem 0;
+}
+h1{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.1rem;
+    color:var(--txt-clr-subtext);
+    line-height: 1.5;
     margin: 2rem 0;
 }
 
@@ -80,5 +89,84 @@ button .add-count{
     border-radius: var(--border-radius);
 }
 .img-content{
+    display: flex;
+    flex-direction: column;
     padding: 5rem;
+    gap: 2rem;
 }
+.img-content .principal-img{
+    border: black solid;
+    position: relative;
+    width: 600px;
+}
+.group-img{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.group-img img{
+    width: 130px;
+}
+.details-content{
+    margin: 6rem 2rem;
+    padding: 3rem;
+}
+.price{
+    display:inline-flex;
+}
+h2:is(.new-price){
+    font-size: 2.5rem;
+    line-height: 0;
+}
+h3:is(.old-price){
+    font-size: 1.5rem;
+    line-height: 0;
+    color: var(--txt-clr-subtext);
+    text-decoration:line-through;
+}
+button:is(.sold){
+    position: relative;
+    left: 2rem;
+    background-color:var(--bg-clr-pourcent);
+    border-radius: 0.5rem;
+    height: 2rem;
+    align-self: center;
+    border: none;
+}
+button h3{
+    padding-left:0.5rem ;
+    padding-right: 0.5rem;
+    margin: auto 0.3rem;
+    color: var(--bg-clr-btn-number);
+    font-size: 1rem;
+}
+.btn-cart{
+   position:relative;
+   top:3rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap:1rem;
+}
+.btn-cart button{
+    height: 4rem;
+    border-radius: 0.5rem;
+    border:none;
+}
+.add-card{
+    grid-column: span 2;
+    display: inline-flex;
+    align-items: center;
+}
+.numbers span{
+    color:var(--bg-clr-btn-add);
+}
+.numbers h3{
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
