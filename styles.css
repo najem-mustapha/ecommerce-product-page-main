@@ -19,6 +19,7 @@ background-color: var(--bg-clr-body);
 font-family: var(--ff-body);
 padding: var(--padding-body);
 text-decoration: none;
+transition: 0.2s;
 }
 ul{
     list-style: none;
@@ -32,31 +33,19 @@ hr{
     margin: 2rem 0;
 }
 h1{
-    font-size: 3rem;
+    font-size: 2rem;
+}
+h3{
+    font-size: 1rem;
+    color:var(--bg-clr-btn-add)
 }
 p{
-    font-size: 1.1rem;
+    font-size: 1rem;
     color:var(--txt-clr-subtext);
     line-height: 1.5;
     margin: 2rem 0;
 }
 
-button .add-cart{
-    background-color: var(--bg-clr-btn-add);
-    color: white;
-    border-radius: var(--border-radius);
-    width: 66%;
-    height: auto;
-    padding: var(--padding-btn);
-}
-button .add-count{
-    background-color: var(--bg-clr-btn-number);
-    color:black;
-    border-radius: var(--border-radius);
-    width: 34%;
-    height: auto;
-    padding: var(--padding-btn);
-}
 /* navigation bar */
 .logos{
     height: 25px;
@@ -65,7 +54,7 @@ button .add-count{
 .navItem{
     font-family: var(--ff-body);
     color:var(--txt-clr-navbar);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .navBar, .navBar-item,.navItems{
     display:flex;
@@ -95,9 +84,8 @@ button .add-count{
     gap: 2rem;
 }
 .img-content .principal-img{
-    border: black solid;
     position: relative;
-    width: 600px;
+    width: 450px;
 }
 .group-img{
     display: flex;
@@ -105,11 +93,10 @@ button .add-count{
     gap: 1rem;
 }
 .group-img img{
-    width: 130px;
+    width: 100px;
 }
 .details-content{
     margin: 6rem 2rem;
-    padding: 3rem;
 }
 .price{
     display:inline-flex;
@@ -148,14 +135,22 @@ button h3{
    gap:1rem;
 }
 .btn-cart button{
-    height: 4rem;
+    height: 3rem;
     border-radius: 0.5rem;
     border:none;
 }
 .add-card{
     grid-column: span 2;
-    display: inline-flex;
     align-items: center;
+    background-color: var(--bg-clr-btn-add);
+}
+.add-card h3{
+        color:white;
+        text-align: center;
+}
+.add-card:hover{
+    box-shadow: 5px 5px 5px hsl(20, 100%, 55%);
+    
 }
 .numbers span{
     color:var(--bg-clr-btn-add);
